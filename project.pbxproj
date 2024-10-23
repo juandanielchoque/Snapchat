@@ -19,6 +19,11 @@
 		B40BED062CBDDAE100B21B55 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B40BED052CBDDAE100B21B55 /* FirebaseAuth */; };
 		B40BED082CBDDAE100B21B55 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = B40BED072CBDDAE100B21B55 /* FirebaseDatabase */; };
 		B40BED0A2CBDDAE100B21B55 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B40BED092CBDDAE100B21B55 /* FirebaseFirestore */; };
+		B40F7B3C2CC97F330062D03B /* ElegirUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40F7B3B2CC97F330062D03B /* ElegirUsuarioViewController.swift */; };
+		B40F7B402CC989D70062D03B /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40F7B3F2CC989D70062D03B /* Usuario.swift */; };
+		B42140A92CC7147B00172AE0 /* SnapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42140A82CC7147B00172AE0 /* SnapsViewController.swift */; };
+		B42140AB2CC71DFF00172AE0 /* ImagenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42140AA2CC71DFF00172AE0 /* ImagenViewController.swift */; };
+		B457B2682CC72FB90030F4F0 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = B457B2672CC72FB90030F4F0 /* FirebaseStorage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +36,11 @@
 		B40BECF32CBDCF6D00B21B55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B40BECF52CBDCF6D00B21B55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B40BECFD2CBDD45000B21B55 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B40F7B3B2CC97F330062D03B /* ElegirUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElegirUsuarioViewController.swift; sourceTree = "<group>"; };
+		B40F7B3F2CC989D70062D03B /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
+		B42140A72CC711AD00172AE0 /* choqueSnapchat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = choqueSnapchat.entitlements; sourceTree = "<group>"; };
+		B42140A82CC7147B00172AE0 /* SnapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapsViewController.swift; sourceTree = "<group>"; };
+		B42140AA2CC71DFF00172AE0 /* ImagenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +53,7 @@
 				B40BED082CBDDAE100B21B55 /* FirebaseDatabase in Frameworks */,
 				B40BED0A2CBDDAE100B21B55 /* FirebaseFirestore in Frameworks */,
 				B40BED042CBDDAE100B21B55 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				B457B2682CC72FB90030F4F0 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +65,7 @@
 			children = (
 				B40BECE62CBDCF6C00B21B55 /* choqueSnapchat */,
 				B40BECE52CBDCF6C00B21B55 /* Products */,
+				B457B2662CC72FB90030F4F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,9 +80,11 @@
 		B40BECE62CBDCF6C00B21B55 /* choqueSnapchat */ = {
 			isa = PBXGroup;
 			children = (
+				B40F7B3E2CC989A80062D03B /* Modelos */,
+				B40F7B3D2CC989070062D03B /* ViewControllers */,
+				B42140A72CC711AD00172AE0 /* choqueSnapchat.entitlements */,
 				B40BECE72CBDCF6C00B21B55 /* AppDelegate.swift */,
 				B40BECE92CBDCF6C00B21B55 /* SceneDelegate.swift */,
-				B40BECEB2CBDCF6C00B21B55 /* iniciarSesionViewController.swift */,
 				B40BECED2CBDCF6C00B21B55 /* Main.storyboard */,
 				B40BECF02CBDCF6D00B21B55 /* Assets.xcassets */,
 				B40BECF22CBDCF6D00B21B55 /* LaunchScreen.storyboard */,
@@ -78,6 +92,32 @@
 				B40BECFD2CBDD45000B21B55 /* GoogleService-Info.plist */,
 			);
 			path = choqueSnapchat;
+			sourceTree = "<group>";
+		};
+		B40F7B3D2CC989070062D03B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B42140AA2CC71DFF00172AE0 /* ImagenViewController.swift */,
+				B42140A82CC7147B00172AE0 /* SnapsViewController.swift */,
+				B40BECEB2CBDCF6C00B21B55 /* iniciarSesionViewController.swift */,
+				B40F7B3B2CC97F330062D03B /* ElegirUsuarioViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B40F7B3E2CC989A80062D03B /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				B40F7B3F2CC989D70062D03B /* Usuario.swift */,
+			);
+			path = Modelos;
+			sourceTree = "<group>";
+		};
+		B457B2662CC72FB90030F4F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +142,7 @@
 				B40BED052CBDDAE100B21B55 /* FirebaseAuth */,
 				B40BED072CBDDAE100B21B55 /* FirebaseDatabase */,
 				B40BED092CBDDAE100B21B55 /* FirebaseFirestore */,
+				B457B2672CC72FB90030F4F0 /* FirebaseStorage */,
 			);
 			productName = choqueSnapchat;
 			productReference = B40BECE42CBDCF6C00B21B55 /* choqueSnapchat.app */;
@@ -163,9 +204,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B42140A92CC7147B00172AE0 /* SnapsViewController.swift in Sources */,
+				B42140AB2CC71DFF00172AE0 /* ImagenViewController.swift in Sources */,
+				B40F7B402CC989D70062D03B /* Usuario.swift in Sources */,
 				B40BECEC2CBDCF6C00B21B55 /* iniciarSesionViewController.swift in Sources */,
 				B40BECE82CBDCF6C00B21B55 /* AppDelegate.swift in Sources */,
 				B40BECEA2CBDCF6C00B21B55 /* SceneDelegate.swift in Sources */,
+				B40F7B3C2CC97F330062D03B /* ElegirUsuarioViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +355,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = choqueSnapchat/choqueSnapchat.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -337,6 +383,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = choqueSnapchat/choqueSnapchat.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -428,6 +475,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B40BECFF2CBDD86900B21B55 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
+		};
+		B457B2672CC72FB90030F4F0 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B40BECFF2CBDD86900B21B55 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
